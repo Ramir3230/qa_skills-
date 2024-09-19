@@ -1,4 +1,5 @@
 Test Cases, Bug Reports & SQL Queries Repository
+
 Welcome to my Test Cases, Bug Reports, and SQL Queries repository! This project showcases my skills and experience in writing detailed and structured test cases, bug reports, and SQL queries. It reflects my understanding of software testing processes and database querying, demonstrating proficiency in documenting scenarios, steps, and outcomes in an organized manner, as well as working with databases.
 
 📂 Repository Structure
@@ -25,14 +26,17 @@ Data retrieval (SELECT)
 Data modification (INSERT, UPDATE, DELETE)
 Data filtering and aggregation (JOIN, GROUP BY, HAVING)
 Query optimization techniques
+
 🛠️ Skills Demonstrated
 Writing structured and reusable test cases.
 Documenting bugs with clear, actionable details.
 Working knowledge of SQL and database querying.
 Understanding and applying software testing methodologies.
 Efficient use of Git for version control and project management.
+
 🧑‍💻 Author
 Ramir Zhurzha
+
 If you have any questions, suggestions, or would like to collaborate, feel free to reach out!
 
 This version adds a focus on SQL, positioning your repository as a well-rounded demonstration of your testing and database skills.
