@@ -1,0 +1,42 @@
+{
+  "testCaseID": "TC001",
+  "title": "Login Functionality Test",
+  "description": "This test verifies that a user can successfully log in with valid credentials.",
+  "preconditions": [
+    "User must be registered and have valid login credentials."
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Open the login page",
+      "data": "",
+      "expectedResult": "Login page is displayed"
+    },
+    {
+      "stepNumber": 2,
+      "action": "Enter valid username",
+      "data": "username: user@example.com",
+      "expectedResult": "Username is entered"
+    },
+    {
+      "stepNumber": 3,
+      "action": "Enter valid password",
+      "data": "password: validpassword123",
+      "expectedResult": "Password is entered"
+    },
+    {
+      "stepNumber": 4,
+      "action": "Click the login button",
+      "data": "",
+      "expectedResult": "User is redirected to the dashboard"
+    }
+  ],
+  "expectedResult": "User successfully logs in and is redirected to the dashboard.",
+  "actualResult": "",
+  "status": "Not Executed",
+  "priority": "High",
+  "severity": "Critical",
+  "createdBy": "qa_user1",
+  "creationDate": "2024-09-19",
+  "lastUpdated": "2024-09-19"
+}
