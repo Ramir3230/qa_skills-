@@ -1,0 +1,178 @@
+{
+  "testCaseID": "TC001",
+  "title": "Login Functionality Test",
+  "description": "This test verifies that a user can successfully log in with valid credentials.",
+  "preconditions": [
+    "User must be registered and have valid login credentials."
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Open the login page",
+      "data": "",
+      "expectedResult": "Login page is displayed"
+    },
+    {
+      "stepNumber": 2,
+      "action": "Enter valid username",
+      "data": "username: user@example.com",
+      "expectedResult": "Username is entered"
+    },
+    {
+      "stepNumber": 3,
+      "action": "Enter valid password",
+      "data": "password: validpassword123",
+      "expectedResult": "Password is entered"
+    },
+    {
+      "stepNumber": 4,
+      "action": "Click the login button",
+      "data": "",
+      "expectedResult": "User is redirected to the dashboard"
+    }
+  ],
+  "expectedResult": "User successfully logs in and is redirected to the dashboard.",
+  "actualResult": "",
+  "status": "Not Executed",
+  "priority": "High",
+  "severity": "Critical",
+  "createdBy": "Ramir Zhurzha",
+  "creationDate": "2024-09-19",
+  "lastUpdated": "2024-09-19"
+}
+
+{
+  "testCaseID": "TC002",
+  "title": "Password Reset Functionality Test",
+  "description": "This test verifies that a user can successfully reset their password using the 'Forgot Password' feature.",
+  "preconditions": [
+    "User must have an active account with a valid email address."
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Open the login page",
+      "data": "",
+      "expectedResult": "Login page is displayed"
+    },
+    {
+      "stepNumber": 2,
+      "action": "Click on the 'Forgot Password' link",
+      "data": "",
+      "expectedResult": "The 'Forgot Password' page is displayed"
+    },
+    {
+      "stepNumber": 3,
+      "action": "Enter a registered email address and click 'Submit'",
+      "data": "email: user@example.com",
+      "expectedResult": "A success message appears, stating a password reset link has been sent"
+    },
+    {
+      "stepNumber": 4,
+      "action": "Check email and click the password reset link",
+      "data": "email inbox",
+      "expectedResult": "Password reset page is opened in the browser"
+    },
+    {
+      "stepNumber": 5,
+      "action": "Enter a new password and confirm it, then click 'Submit'",
+      "data": "password: newpassword123",
+      "expectedResult": "Password is successfully reset and a confirmation message is displayed"
+    }
+  ],
+  "expectedResult": "User successfully resets their password and is able to log in with the new password.",
+  "actualResult": "",
+  "status": "Not Executed",
+  "priority": "High",
+  "severity": "Major",
+  "createdBy": "Ramir Zhurzha",
+  "creationDate": "2024-09-19",
+  "lastUpdated": "2024-09-19"
+}
+
+{
+  "testCaseID": "TC003",
+  "title": "Add Item to Cart Functionality Test",
+  "description": "This test verifies that a user can successfully add an item to their shopping cart from the product details page.",
+  "preconditions": [
+    "User must have access to the e-commerce platform and at least one product must be available for purchase."
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Navigate to the product listing page",
+      "data": "",
+      "expectedResult": "Product listing page is displayed"
+    },
+    {
+      "stepNumber": 2,
+      "action": "Select a product and open the product details page",
+      "data": "Product: Laptop X",
+      "expectedResult": "Product details page is displayed"
+    },
+    {
+      "stepNumber": 3,
+      "action": "Click the 'Add to Cart' button",
+      "data": "",
+      "expectedResult": "The item is added to the shopping cart, and a confirmation message is displayed"
+    },
+    {
+      "stepNumber": 4,
+      "action": "Open the shopping cart",
+      "data": "",
+      "expectedResult": "The selected item is visible in the cart"
+    }
+  ],
+  "expectedResult": "The user successfully adds an item to their cart, and it appears correctly in the shopping cart.",
+  "actualResult": "",
+  "status": "Not Executed",
+  "priority": "Medium",
+  "severity": "Minor",
+  "createdBy": "Ramir Zhurzha",
+  "creationDate": "2024-09-19",
+  "lastUpdated": "2024-09-19"
+}
+
+{
+  "testCaseID": "TC004",
+  "title": "Search Functionality Test",
+  "description": "This test verifies that a user can search for products using the search bar and retrieve relevant results.",
+  "preconditions": [
+    "User must have access to the e-commerce platform with products available in the catalog."
+  ],
+  "steps": [
+    {
+      "stepNumber": 1,
+      "action": "Open the homepage",
+      "data": "",
+      "expectedResult": "Homepage is displayed"
+    },
+    {
+      "stepNumber": 2,
+      "action": "Enter a product name into the search bar (e.g., 'Laptop')",
+      "data": "Search query: Laptop",
+      "expectedResult": "The product name is entered in the search bar"
+    },
+    {
+      "stepNumber": 3,
+      "action": "Click the 'Search' button",
+      "data": "",
+      "expectedResult": "The search results page is displayed"
+    },
+    {
+      "stepNumber": 4,
+      "action": "Verify that relevant products are displayed in the results",
+      "data": "",
+      "expectedResult": "Search results display relevant products related to the query"
+    }
+  ],
+  "expectedResult": "The user is able to search for products and see relevant results based on their query.",
+  "actualResult": "",
+  "status": "Not Executed",
+  "priority": "High",
+  "severity": "Major",
+  "createdBy": "Ramir Zhurzha",
+  "creationDate": "2024-09-19",
+  "lastUpdated": "2024-09-19"
+}
+
