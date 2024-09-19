@@ -1,0 +1,31 @@
+SELECT a.album_id, a.name,
+	a.band_id as b_id1,
+	b.band_id as b_id2,
+	b.name as band_name
+FROM album as a
+FULL OUTER JOIN band as b
+	ON a.band_id = b.band_id
+WHERE album_id IN (19318, 18725, 297418, 54326, 74821)
+
+SELECT DISTINCT year, band_id
+FROM album
+ORDER BY year DESC NULLS LAST/NULLS FIRST, band_id
+
+SELECT b.band_id, p.person_id, 
+	b.name as band_name,
+	p.name as person_name
+FROM band as b
+INNER JOIN band_person as b_p
+ON b.band_id = b_p.band_id
+INNER JOIN person as p
+	ON p.person_id = b_p.person_id
+WHERE p.name = 'Marcel Kaper'
+
+SELECT a.album_id, a.name, 
+	a.band_id as id_from_album, 
+	b.band_id as id_from_band, 
+	b.name as band_name
+FROM album as a
+INNER JOIN band as b
+	ON a.band_id = b.band_id
+ORDER BY b.band_id
