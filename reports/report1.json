@@ -45,3 +45,161 @@
     ]
   }
 }
+
+{
+    "bugReport": {
+      "id": "BR-002",
+      "title": "Search functionality returns incorrect results on the product page",
+      "description": "When a user performs a search using the product search bar,incorrect or unrelated products are being 
+                        displayed in the results. The issue occurs intermittently across various categories.",
+      "severity": "Critical",
+      "priority": "High",
+      "status": "Open",
+      "stepsToReproduce": [
+        {
+          "stepNumber": 1,
+          "description": "Navigate to the product page on the website."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Enter a product name (e.g., 'Laptop') in the search bar."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Press the 'Search' button."
+        }
+      ],
+      "expectedResult": "The search results should display products related to the entered 
+      query (e.g., showing different laptop models).",
+      "actualResult": "The search results show unrelated products (e.g., mobile phones, accessories) 
+      or return no results at all, even though matching products are available.",
+      "environment": {
+        "os": "Windows 10",
+        "browser": "Firefox 92.0",
+        "device": "Desktop"
+      },
+      "attachments": [
+        {
+          "fileName": "search_issue_screenshot.png",
+          "fileType": "image/png",
+          "description": "Screenshot showing unrelated products in the search results"
+        }
+      ],
+      "reportedBy": "Ramir Zhurzha",
+      "assignedTo": "Backend Development Team",
+      "createdDate": "2024-09-19",
+      "comments": [
+        {
+          "author": "QA Team",
+          "comment": "Issue seems to occur when certain keywords are used. Needs investigation into search query logic."
+        }
+      ]
+    }
+  }
+  
+
+  {
+    "bugReport": {
+      "id": "BR-003",
+      "title": "Checkout button becomes unresponsive after applying a discount code",
+      "description": "When a valid discount code is applied at checkout, the 'Checkout' button becomes unresponsive and users cannot complete the purchase. 
+                        The issue occurs consistently with multiple valid discount codes.",
+      "severity": "Critical",
+      "priority": "High",
+      "status": "Open",
+      "stepsToReproduce": [
+        {
+          "stepNumber": 1,
+          "description": "Add any product to the cart."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Proceed to the checkout page."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Enter a valid discount code (e.g., 'DISCOUNT2024')."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Click the 'Apply' button and then attempt to click the 'Checkout' button."
+        }
+      ],
+      "expectedResult": "The discount code should be applied, and the 'Checkout' button should allow the user to proceed with the purchase.",
+      "actualResult": "The discount is applied, but the 'Checkout' button becomes unresponsive, preventing the user from proceeding.",
+      "environment": {
+        "os": "Windows 11",
+        "browser": "Google Chrome 93.0",
+        "device": "Desktop"
+      },
+      "attachments": [
+        {
+          "fileName": "checkout_button_issue.png",
+          "fileType": "image/png",
+          "description": "Screenshot showing the unresponsive 'Checkout' button after applying the discount."
+        }
+      ],
+      "reportedBy": "Ramir Zhurzha",
+      "assignedTo": "Backend Development Team",
+      "createdDate": "2024-09-19",
+      "comments": [
+        {
+          "author": "QA Team",
+          "comment": "Issue is consistently reproducible with various discount codes across different browsers."
+        }
+      ]
+    }
+  }
+  
+  {
+    "bugReport": {
+      "id": "BR-004",
+      "title": "Error message not displayed when mandatory fields are left blank on the registration form",
+      "description": "When submitting the registration form without filling in mandatory fields, no error message is displayed to the user, and the form submission fails silently.",
+      "severity": "Major",
+      "priority": "High",
+      "status": "Open",
+      "stepsToReproduce": [
+        {
+          "stepNumber": 1,
+          "description": "Navigate to the registration page."
+        },
+        {
+          "stepNumber": 2,
+          "description": "Leave mandatory fields (e.g., 'Email' and 'Password') blank."
+        },
+        {
+          "stepNumber": 3,
+          "description": "Click on the 'Submit' button."
+        },
+        {
+          "stepNumber": 4,
+          "description": "Observe that no error message appears, and the form is not submitted."
+        }
+      ],
+      "expectedResult": "An error message should appear, indicating that the mandatory fields must be filled out.",
+      "actualResult": "No error message is displayed, and the form submission fails without any feedback to the user.",
+      "environment": {
+        "os": "Ubuntu 20.04",
+        "browser": "Mozilla Firefox 91.0",
+        "device": "Desktop"
+      },
+      "attachments": [
+        {
+          "fileName": "missing_error_message.png",
+          "fileType": "image/png",
+          "description": "Screenshot of the registration form after clicking 'Submit' without filling out mandatory fields."
+        }
+      ],
+      "reportedBy": "Ramir Zhurzha",
+      "assignedTo": "Frontend Development Team",
+      "createdDate": "2024-09-19",
+      "comments": [
+        {
+          "author": "QA Team",
+          "comment": "The issue seems to be related to form validation logic on the client side."
+        }
+      ]
+    }
+  }
+  
