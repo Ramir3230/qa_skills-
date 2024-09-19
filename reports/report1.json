@@ -70,9 +70,9 @@
         }
       ],
       "expectedResult": "The search results should display products related to the entered 
-      query (e.g., showing different laptop models).",
+                        query (e.g., showing different laptop models).",
       "actualResult": "The search results show unrelated products (e.g., mobile phones, accessories) 
-      or return no results at all, even though matching products are available.",
+                        or return no results at all, even though matching products are available.",
       "environment": {
         "os": "Windows 10",
         "browser": "Firefox 92.0",
