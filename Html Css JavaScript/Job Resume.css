@@ -1,0 +1,123 @@
+.homeBtn{
+    color:black;
+    text-decoration: none;
+    font-size: 2.5rem;
+    /* font-family: 'Cinzel', serif; */
+    /* font-family: 'Cormorant Garamond', serif; */
+    /* font-family: 'M PLUS 3p', sans-serif; */
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: bold;
+    width: 220px;
+    text-align: center;
+    height: 60px;
+    line-height: 60px;
+}
+.homeBtn:nth-of-type(1){
+    border-radius: 0 30px 30px 0;
+}
+.homeBtn:nth-of-type(1):hover{
+    background-color: #222222;
+    color: #ffffff;
+    transition: 1s;
+    font-size: 2.3rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    
+}
+.homeBtn:nth-of-type(2){
+    border-radius: 30px 0 0 30px;
+}
+.homeBtn:nth-of-type(2):hover{
+    background-color: #222222;
+    color: #ffffff;
+    transition: 1s;
+    font-size: 2.3rem;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    
+}
+.button{
+    color:black;
+    text-decoration: none;
+    font-size: 2.5rem;
+   
+    font-family: 'M PLUS 1p', sans-serif;
+    font-weight: bold;
+    
+    text-align: center; 
+}
+.button:hover{
+    color: #ffffff;
+    font-size: 2.3rem;
+    transition: 1s;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+li:hover{
+    background-color: #222222;
+    transition: 1s;
+
+}
+.mainBoxNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -20;
+    
+}
+.MainBox{
+    
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.boxNav{
+    
+    /* height: 100vh; */
+    width: 1920px;
+    margin: 0;
+    
+}
+nav{
+    font-size: 1,5em;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    border: 2px rgb(20, 20, 20) solid;
+    background-color: #434242;
+    height: 60px;
+    align-items: center;
+    margin-left: -10px;
+    margin-right: -10px;
+    margin-top: -10px;
+    
+    
+
+}
+ul{
+    /* border: 2px solid rgb(165, 164, 164); */
+    flex: 1;
+    max-width: 50%;
+    display: flex;
+    justify-content: space-evenly ;
+    
+    
+    
+
+}
+ul,li{
+    /* display: inline; */
+    margin: 0;
+    padding: 0;
+}
+li{
+    list-style-type:none;
+    width: 250px;
+    text-align: center;
+    line-height: 60px;
+    height: 60px;
+    flex-shrink: 0;
+    border-radius: 30px;
+    
+}
+
+

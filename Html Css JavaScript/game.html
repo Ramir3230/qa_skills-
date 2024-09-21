@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="icon" href="Foto/istockphoto-1316949550-612x612.jpg">
+    <title>Mini Game</title>
+    <link rel="stylesheet" href="game.css">
+</head>
+<body>
+      
+            <div class="mainBoxNav">
+                <div class="boxNav">
+                        <nav>
+
+                            <a href="Sait.html" class="homeBtn" id="Home">Home</a>
+
+                            <ul class="ulBtn">
+
+                                <li id="1" class="liBtn">
+                                    <a href="Sait.html" class="button" for="1">Learn More</a>
+                                </li>
+                                <li id="2" class="liBtn">
+                                    <a href="Job Resume.html" class="button" for="2">Job Resume</a>
+                                </li>
+                                <li id="3"class="liBtn">
+                                    <a href="game.html" class="button" for="3" >Mini Game</a>
+                                </li>
+                            
+                            </ul>
+
+                                <a href="#Home" class="homeBtn">Sign Up</a>
+                    </nav>
+                </div> 
+            </div> 
+    <div class="wrapper">          
+        <div class="information">
+            <div class="textRules">
+                <h2>Game Rules</h2>
+            <p class="pRules">Goal: Reach the winning score before your opponent.</p>
+            <p class="pRules">Start: Both players begin with zero score.</p>
+            <p class="pRules">Scoring: Each click adds one point to your score.</p>
+            <p class="pRules">Winning: First to reach the winning score wins.</p>
+            <p class="pRules">Winning Score: Set before the game starts.</p>
+            <p class="pRules">Reset: After finishing the game, start again by pressing enter.</p>
+            <p class="pRules">Shift Key: Press to increase your score by one.</p>
+            <p class="pRules">History: Tracks winners of last five games.</p>
+            <p class="pRules">Shift Key Use: Left Shift for Player 1, Right Shift for Player 2.</p>
+            <p class="pRules">History Display: Shows last five winners.</p>
+            </div>
+            <div class="mainBox">
+                    
+                <div class="box">
+                    <div class="header">
+                        <h1>
+                            <span id="s1">0</span> TO <span id="s2">0</span>
+                        </h1>
+                    </div>
+                    <div class="trava">
+                        <div class="buttons">
+                            <button id="b1">First player</button>
+                            <button id="b2">Second player</button>
+                        </div>
+                        <div class="pres">
+                            <select name="" id="score">
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5</option>
+                                <option value="6">6</option>
+                                <option value="7">7</option>
+                                <option value="8">8</option>
+                                <option value="9">9</option>
+                                <option value="10">10</option>
+                            </select>
+                            <button id="br">Reset</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="histBox">
+                <div class="winHis">
+                    <h2>Winning history</h2>
+                    <ul class="ulHist" id="history">
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>    
+    </div>    
+    <script src="game.js"></script>
+</body>
+    
+</html>
